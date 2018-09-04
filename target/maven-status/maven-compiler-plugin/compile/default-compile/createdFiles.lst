@@ -1,5 +1,6 @@
 com\amazon\qa\pages\DeliveryPopupPage.class
 com\amazon\qa\pages\DealsPage.class
+com\amazon\qa\pages\SigninValidation.class
 com\amazon\qa\pages\RegisterPage.class
 com\amazon\qa\pages\SellPage.class
 com\amazon\qa\pages\CustomerServicePage.class

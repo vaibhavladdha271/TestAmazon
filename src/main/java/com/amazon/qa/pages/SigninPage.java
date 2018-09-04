@@ -15,7 +15,7 @@ public class SigninPage extends TestBase {
 	WebElement forgotpasswordlink;
 	
 	@FindBy(xpath="//a[contains(@class,'a-expander-header')]")
-	WebElement helplink;
+	WebElement needhelplink;
 	
 	@FindBy(id="ap-other-signin-issues-link")
 	WebElement signinissuelink;
@@ -40,6 +40,12 @@ public class SigninPage extends TestBase {
 	
 	@FindBy(id="ap_change_login_claim")
 	WebElement changelink;
+	
+	@FindBy(xpath="//a[contains(text(),'Conditions of Use')]")
+	WebElement conditionsofuselink;
+	
+	@FindBy(xpath="//a[contains(text(),'Privacy Notice')]")
+	WebElement privacynoticelink;
 	
 	public SigninPage()
 	{
@@ -72,7 +78,7 @@ public class SigninPage extends TestBase {
     }
     public void clickonhelplink()
     {
-    	helplink.click();
+    	needhelplink.click();
     }
     public void clickonForgotPasswordlink()
     {
@@ -91,5 +97,9 @@ public class SigninPage extends TestBase {
     	changelink.click();
     	emailfield.clear();
     	emailfield.sendKeys("vaibhavladdha271@gmail.com");
+    }
+    public void clickonConditionsofuselink() throws Exception
+    {
+    	conditionsofuselink.click();
     }
 }

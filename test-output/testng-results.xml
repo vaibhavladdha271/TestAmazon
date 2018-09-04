@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="5" total="6" passed="1">
+<testng-results skipped="0" failed="0" ignored="7" total="8" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="12663" started-at="2018-09-04T14:38:49Z" finished-at="2018-09-04T14:39:02Z">
+  <suite name="Default suite" duration-ms="13007" started-at="2018-09-04T16:50:14Z" finished-at="2018-09-04T16:50:27Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="12663" started-at="2018-09-04T14:38:49Z" finished-at="2018-09-04T14:39:02Z">
+    <test name="Default test" duration-ms="13007" started-at="2018-09-04T16:50:14Z" finished-at="2018-09-04T16:50:27Z">
       <class name="com.amazon.qa.tests.SigninPageTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.amazon.qa.tests.SigninPageTest@3fee9989]" name="setup" is-config="true" duration-ms="10965" started-at="2018-09-04T14:38:49Z" finished-at="2018-09-04T14:39:00Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.amazon.qa.tests.SigninPageTest@73ad2d6]" name="setup" is-config="true" duration-ms="11802" started-at="2018-09-04T16:50:14Z" finished-at="2018-09-04T16:50:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="clickonForgotPasswordlink()[pri:0, instance:com.amazon.qa.tests.SigninPageTest@3fee9989]" name="clickonForgotPasswordlink" duration-ms="861" started-at="2018-09-04T14:39:00Z" finished-at="2018-09-04T14:39:01Z">
+        <test-method status="PASS" signature="clickonConditionsofuselink()[pri:0, instance:com.amazon.qa.tests.SigninPageTest@73ad2d6]" name="clickonConditionsofuselink" duration-ms="201" started-at="2018-09-04T16:50:26Z" finished-at="2018-09-04T16:50:26Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- clickonForgotPasswordlink -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.amazon.qa.tests.SigninPageTest@3fee9989]" name="tearDown" is-config="true" duration-ms="801" started-at="2018-09-04T14:39:01Z" finished-at="2018-09-04T14:39:02Z">
+        </test-method> <!-- clickonConditionsofuselink -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.amazon.qa.tests.SigninPageTest@73ad2d6]" name="tearDown" is-config="true" duration-ms="954" started-at="2018-09-04T16:50:26Z" finished-at="2018-09-04T16:50:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

@@ -59,6 +59,11 @@ public class SigninPageTest extends TestBase {
 	{
 		signin.clickonchangelink();
 	}
+	@Test
+	public void clickonConditionsofuselink() throws Exception
+	{
+		signin.clickonConditionsofuselink();
+	}
 	@AfterMethod
 	public void tearDown()
 	{
