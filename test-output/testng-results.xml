@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="5" total="6" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="12663" started-at="2018-09-04T14:38:49Z" finished-at="2018-09-04T14:39:02Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="12663" started-at="2018-09-04T14:38:49Z" finished-at="2018-09-04T14:39:02Z">
+      <class name="com.amazon.qa.tests.SigninPageTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.amazon.qa.tests.SigninPageTest@3fee9989]" name="setup" is-config="true" duration-ms="10965" started-at="2018-09-04T14:38:49Z" finished-at="2018-09-04T14:39:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="clickonForgotPasswordlink()[pri:0, instance:com.amazon.qa.tests.SigninPageTest@3fee9989]" name="clickonForgotPasswordlink" duration-ms="861" started-at="2018-09-04T14:39:00Z" finished-at="2018-09-04T14:39:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickonForgotPasswordlink -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.amazon.qa.tests.SigninPageTest@3fee9989]" name="tearDown" is-config="true" duration-ms="801" started-at="2018-09-04T14:39:01Z" finished-at="2018-09-04T14:39:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.amazon.qa.tests.SigninPageTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
