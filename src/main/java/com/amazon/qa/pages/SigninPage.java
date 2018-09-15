@@ -30,7 +30,7 @@ public class SigninPage extends TestBase {
 	WebElement emailvalidationmessage;
 	
 	@FindBy(xpath="//div[@class='a-alert-content']/ul/li/span[@class='a-list-item']")
-	WebElement mobilenumbervalidationmessage;
+	WebElement validationmessage;
 	
 	@FindBy(id="ap_password")
 	WebElement passwordfield;
@@ -46,6 +46,18 @@ public class SigninPage extends TestBase {
 	
 	@FindBy(xpath="//a[contains(text(),'Privacy Notice')]")
 	WebElement privacynoticelink;
+	
+	@FindBy(id="remember_me_learn_more_link")
+	WebElement detailslink;
+	
+	@FindBy(xpath="//button[contains(@class,'a-button-close')]")
+	WebElement btnclose;
+	
+	@FindBy(xpath="//div[@id='a-popover-content-1']/p")
+	WebElement Keepsigninmessage;
+	
+	@FindBy(xpath="//div[@id='a-popover-content-1']/p[2]")
+	WebElement securecontentmessage;
 	
 	public SigninPage()
 	{
@@ -66,7 +78,15 @@ public class SigninPage extends TestBase {
     {
     	emailfield.sendKeys("111111111111");
     	continuebtn.click();
-    	return mobilenumbervalidationmessage.getText();
+    	return validationmessage.getText();
+    }
+    public String ValidateIncorrectPasswordmessage()
+    {
+    	emailfield.sendKeys("vaibhavladdha271@gmail.com");
+    	continuebtn.click();
+    	passwordfield.sendKeys("123");
+    	btnlogin.click();
+    	return validationmessage.getText();
     }
     public String Signinwithmobilenumber()
     {
@@ -101,5 +121,28 @@ public class SigninPage extends TestBase {
     public void clickonConditionsofuselink() throws Exception
     {
     	conditionsofuselink.click();
+    }
+    public void clickonPrivacynoticelink()
+    {
+    	privacynoticelink.click();
+    }
+    public void clickonDetailslink()
+    {
+    	detailslink.click();
+    	
+    }
+    public void clickonClosebutton()
+    {
+    	emailfield.sendKeys("8928805601");
+    	continuebtn.click();
+    	clickonDetailslink();
+    	btnclose.click();
+    }
+    public String KeepMeSigninmessage()
+    {
+    	emailfield.sendKeys("8928805601");
+    	continuebtn.click();
+    	detailslink.click();
+    	return securecontentmessage.getText();
     }
 }

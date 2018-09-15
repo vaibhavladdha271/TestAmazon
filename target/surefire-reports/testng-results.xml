@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="7" total="8" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Surefire suite" duration-ms="14474" started-at="2018-09-04T17:03:05Z" finished-at="2018-09-04T17:03:20Z">
+  <suite name="Surefire suite" duration-ms="20629" started-at="2018-09-09T13:40:00Z" finished-at="2018-09-09T13:40:21Z">
     <groups>
     </groups>
-    <test name="Surefire test" duration-ms="14474" started-at="2018-09-04T17:03:05Z" finished-at="2018-09-04T17:03:20Z">
-      <class name="com.amazon.qa.tests.SigninPageTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.amazon.qa.tests.SigninPageTest@3c09711b]" name="setup" is-config="true" duration-ms="13379" started-at="2018-09-04T17:03:05Z" finished-at="2018-09-04T17:03:19Z">
+    <test name="Surefire test" duration-ms="20629" started-at="2018-09-09T13:40:00Z" finished-at="2018-09-09T13:40:21Z">
+      <class name="com.amazon.qa.tests.HomePageTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.amazon.qa.tests.HomePageTest@3c09711b]" name="setup" is-config="true" duration-ms="8977" started-at="2018-09-09T13:40:00Z" finished-at="2018-09-09T13:40:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="clickonConditionsofuselink()[pri:0, instance:com.amazon.qa.tests.SigninPageTest@3c09711b]" name="clickonConditionsofuselink" duration-ms="165" started-at="2018-09-04T17:03:19Z" finished-at="2018-09-04T17:03:19Z">
+        <test-method status="PASS" signature="clickonSignoutlink()[pri:0, instance:com.amazon.qa.tests.HomePageTest@3c09711b]" name="clickonSignoutlink" duration-ms="10858" started-at="2018-09-09T13:40:09Z" finished-at="2018-09-09T13:40:20Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- clickonConditionsofuselink -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.amazon.qa.tests.SigninPageTest@3c09711b]" name="tearDown" is-config="true" duration-ms="901" started-at="2018-09-04T17:03:19Z" finished-at="2018-09-04T17:03:20Z">
+        </test-method> <!-- clickonSignoutlink -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.amazon.qa.tests.HomePageTest@3c09711b]" name="tearDown" is-config="true" duration-ms="764" started-at="2018-09-09T13:40:20Z" finished-at="2018-09-09T13:40:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.amazon.qa.tests.SigninPageTest -->
+      </class> <!-- com.amazon.qa.tests.HomePageTest -->
     </test> <!-- Surefire test -->
   </suite> <!-- Surefire suite -->
 </testng-results>

@@ -64,6 +64,25 @@ public class SigninPageTest extends TestBase {
 	{
 		signin.clickonConditionsofuselink();
 	}
+	@Test
+	public void validateincorrectpasswordmessage()
+	{
+		String actualmessage=signin.ValidateIncorrectPasswordmessage();
+		String expectedmessage="Your password is incorrect";
+		Assert.assertEquals(actualmessage, expectedmessage);
+	}
+	@Test
+	public void Validatesigninmessage()
+	{
+		String actualmessage=signin.KeepMeSigninmessage();
+		String expectedmessage="To keep your account secure, use this option only on your personal devices.";
+		Assert.assertEquals(actualmessage, expectedmessage);
+	}
+	@Test
+	public void clickonClosebutton()
+	{
+		signin.clickonClosebutton();
+	}
 	@AfterMethod
 	public void tearDown()
 	{

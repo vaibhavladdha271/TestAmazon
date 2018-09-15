@@ -62,6 +62,42 @@ public class HomePage extends TestBase {
 	
 	@FindBy(xpath="//a[@class='nav-action-button']")
 	WebElement btnsignin;
+	
+	@FindBy(xpath="//a[contains(@class,'nav-link')]/span[contains(text(),'Your Account')]")
+	WebElement youraccountlink;
+	
+	@FindBy(xpath="//a[contains(@class,'nav-link')]/span[contains(text(),'Your Orders')]")
+	WebElement yourorderslink;
+	
+	@FindBy(xpath="//a[contains(@class,'nav-link')]/span[contains(text(),'Your Wish List')]")
+	WebElement yourwishlistlink;
+	
+	@FindBy(xpath="//a[contains(@class,'nav-link')]/span[contains(text(),'Your Recommendations')]")
+	WebElement yourrecommendationslink;
+	
+	@FindBy(xpath="//a[contains(@class,'nav-link')]/span[contains(text(),'Your Prime Membership')]")
+	WebElement yourprimemembershiplink;
+	
+	@FindBy(xpath="//a[contains(@class,'nav-link')]/span[contains(text(),'Your Prime Video')]")
+	WebElement yourprimevideolink;
+	
+	@FindBy(xpath="//a[contains(@class,'nav-link')]/span[contains(text(),'Your Subscribe & Save Items')]")
+	WebElement subscribeandsaveitemslink;
+	
+	@FindBy(xpath="//a[contains(@class,'nav-link')]/span[contains(text(),'Your Amazon Business Account')]")
+	WebElement amazonbusinessaccountlink;
+	
+	@FindBy(xpath="//a[contains(@class,'nav-link')]/span[contains(text(),'Seller Account')]")
+	WebElement selleraccountlink;
+	
+	@FindBy(xpath="//a[contains(@class,'nav-link')]/span[contains(text(),'Manage Your Content and Devices')]")
+	WebElement contentanddeviceslink;
+	
+	@FindBy(xpath="//a[contains(@class,'nav-link')]/span[contains(text(),'Sign Out')]")
+	WebElement signoutlink;
+	
+	SigninPage signin=new SigninPage();
+	
 	public HomePage()
 	{
 		PageFactory.initElements(driver, this);
@@ -75,6 +111,7 @@ public class HomePage extends TestBase {
 	public void clickonYourAmazonlink()
 	{
 		youramazonlink.click();
+		
 	}
 	
 	public void clickonDealslink()
@@ -113,4 +150,67 @@ public class HomePage extends TestBase {
 		action.moveToElement(signinlink).moveToElement(btnsignin).click().build().perform();
 		return new SigninPage();
 	}
+	public String clickonYourOrderlink()
+	{
+		Actions action=new Actions(driver);
+		action.moveToElement(signinlink).moveToElement(yourorderslink).click().build().perform();
+		return signin.Signinwithmobilenumber();
+	}
+	public String clickonYourwishlistlink()
+	{
+		Actions action=new Actions(driver);
+		action.moveToElement(signinlink).moveToElement(yourwishlistlink).click().build().perform();
+		return signin.Signinwithmobilenumber();
+	}
+	public String clickonYourRecommendationslink()
+	{
+		Actions action=new Actions(driver);
+		action.moveToElement(signinlink).moveToElement(yourrecommendationslink).click().build().perform();
+		return signin.Signinwithmobilenumber();
+	}
+	public String clickonPrimeMembershiplink()
+	{
+		Actions action=new Actions(driver);
+		action.moveToElement(signinlink).moveToElement(yourprimemembershiplink).click().build().perform();
+		return signin.Signinwithmobilenumber();
+	}
+	public String clickonPrimeVideolink()
+	{
+		Actions action=new Actions(driver);
+		action.moveToElement(signinlink).moveToElement(yourprimevideolink).click().build().perform();
+		return signin.Signinwithmobilenumber();
+	}
+	public String clickonSubscribeandSaveitemslink()
+	{
+		Actions action=new Actions(driver);
+		action.moveToElement(signinlink).moveToElement(subscribeandsaveitemslink).click().build().perform();
+		return signin.Signinwithmobilenumber();
+	}
+	public String clickonAmazonBusinessaccountlink()
+	{
+		Actions action=new Actions(driver);
+		action.moveToElement(signinlink).moveToElement(amazonbusinessaccountlink).click().build().perform();
+		return signin.Signinwithmobilenumber();
+	}
+	public String clickonSelleraccountlink()
+	{
+		Actions action=new Actions(driver);
+		action.moveToElement(signinlink).moveToElement(selleraccountlink).click().build().perform();
+		return signin.Signinwithmobilenumber();
+	}
+	public String clickonContentandDeviceslink()
+	{
+		Actions action=new Actions(driver);
+		action.moveToElement(signinlink).moveToElement(contentanddeviceslink).click().build().perform();
+		return signin.Signinwithmobilenumber();
+	}
+	public String clickonSignoutlink()
+	{
+		Actions action=new Actions(driver);
+		action.moveToElement(signinlink).moveToElement(btnsignin).click().build().perform();
+		signin.Signinwithmobilenumber();
+		action.moveToElement(signinlink).moveToElement(signoutlink).click().build().perform();
+		return driver.getTitle();
+	}
+	
 }
